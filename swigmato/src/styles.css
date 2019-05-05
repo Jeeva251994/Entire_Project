@@ -1,3 +1,5 @@
 body{
     background-image: url("../src/assets/images/main_bgd.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
