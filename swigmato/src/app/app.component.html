@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
    <button id="openModal" #openModal [hidden]="true" 
-   data-toggle="modal" data-target="#login-modal"></button>
+   data-toggle="modal" data-target="#login-modal" data-backdrop="static"></button>
 
     <div class="modal fade" id="login-modal" role="dialog">
       <div class="modal-dialog">
@@ -22,13 +22,20 @@
                     <input id="password" type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
                   </div>
                 </form>
+                <div [hidden]="!errorMsg">
+                      <span class="col-md-12 text-center alert alert-danger alert-lg">! Invalid Credentials</span>
+                </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-warning no_outline">Reset</button>
-            <button type="button" (click)="login()" class="btn btn-success no_outline">Login</button>
+            <button type="button" (click)="onResetAll(true)" class="btn btn-warning no_outline">Reset</button>
+            <button type="button" (click)="login();" class="btn btn-success no_outline">Login</button>
           </div>
         </div>
         
-      </div>
+      </div> 
     </div>
 </div>
+<div *ngIf="loginCheck" class="row welcome">
+  <div class="col-md-2 col-md-offset-10 ">Welcome {{username}}</div>
+</div>
+<router-outlet></router-outlet>

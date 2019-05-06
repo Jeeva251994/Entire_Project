@@ -12,23 +12,9 @@ export class LoginService {
     
   }
   
-
-  // loginCheck(usr, pwd): any { 
-  //     const httpOptions = {
-  //       headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  //     };
-  //     // let url = "http://localhost:8080/loginCheck"
-  //   let url = "http://localhost:8080/hello/hello"
-  //     let body = {
-  //       // username: usr,
-  //       // password: pwd
-  //     }
-  //   return this.http.post<any>(url, body, httpOptions).pipe()
+  // loginCheck(a, b): Observable<any> {
+    loginCheck (usname,pwd):any {
     
-    
-  // }
-
-  loginCheck (a,b): Observable<any> {
     
         const httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -36,12 +22,17 @@ export class LoginService {
      
     let url = "http://localhost:8080/hello/hello";
       let body = {
-        username: a,
-        pwd: b
+        username: usname,
+        pwd: pwd
       }
-    console.log(body)
-    return this.http.post<any>(url,body, httpOptions).pipe()
-  
+      console.log(body)
+      if (usname != undefined && usname !="" && pwd != undefined && pwd != "") {
+        // return this.http.post<any>(url,body, httpOptions).pipe()
+        return true;
+      }
+      else { 
+        return false;
+      }
   }
 
 
