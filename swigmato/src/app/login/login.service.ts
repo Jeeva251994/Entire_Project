@@ -28,7 +28,7 @@ export class LoginService {
     
   // }
 
-  loginCheck (a,b): Observable<any> {
+  loginCheck (c,d): Observable<any> {
     // return this.http.get<any>("http://localhost:8080/hello/hello")
     //   .pipe(
     //     // catchError(this.handleError<Hero[]>('getHeroes', []))
@@ -39,8 +39,8 @@ export class LoginService {
       // let url = "http://localhost:8080/loginCheck"
     let url = "http://localhost:8080/hello/hello";
       let body = {
-        username: a,
-        pwd: b
+        username: c,
+        pwd: d
       }
     console.log(body)
     return this.http.post<any>(url,body, httpOptions).pipe()
