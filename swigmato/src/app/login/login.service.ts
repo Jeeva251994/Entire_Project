@@ -28,19 +28,16 @@ export class LoginService {
     
   // }
 
-  loginCheck (c,d): Observable<any> {
-    // return this.http.get<any>("http://localhost:8080/hello/hello")
-    //   .pipe(
-    //     // catchError(this.handleError<Hero[]>('getHeroes', []))
-    //   );
+  loginCheck (a,b): Observable<any> {
+    
         const httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
       };
-      // let url = "http://localhost:8080/loginCheck"
+     
     let url = "http://localhost:8080/hello/hello";
       let body = {
-        username: c,
-        pwd: d
+        username: a,
+        pwd: b
       }
     console.log(body)
     return this.http.post<any>(url,body, httpOptions).pipe()
