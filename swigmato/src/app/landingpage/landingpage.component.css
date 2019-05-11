@@ -1,0 +1,19 @@
+.bg{
+    /* background-image:linear-gradient(#00b70f,#000)    */
+    background-color: #000
+}
+.bg-white{
+    background-color:#fff;
+    color:#000 !important;
+}
+.bg-white:hover{
+    background-color:#fff;
+    color:#000 !important;
+}
+.bg-normal{
+    background-color:#000;
+    color:#fff;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color:red;
+}

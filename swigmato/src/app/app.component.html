@@ -27,6 +27,7 @@
                 </div>
           </div>
           <div class="modal-footer">
+              <button type="button" (click)="onResetAll(true)" class="btn btn-primary no_outline">SignUp</button>
             <button type="button" (click)="onResetAll(true)" class="btn btn-warning no_outline">Reset</button>
             <button type="button" (click)="login();" class="btn btn-success no_outline">Login</button>
           </div>
@@ -35,7 +36,7 @@
       </div> 
     </div>
 </div>
-<div *ngIf="loginCheck" class="row welcome">
-  <div class="col-md-2 col-md-offset-10 ">Welcome {{username}}</div>
-</div>
-<router-outlet></router-outlet>
+    
+  
+
+<app-landingpage></app-landingpage>

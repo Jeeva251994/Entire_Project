@@ -1,3 +1,19 @@
-<div class="container-fluid">
-"Landing page"
-</div>
+
+  
+        <nav class="navbar navbar-inverse bg">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Swigmato</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li [ngClass]="(item=='home')?'bg-white':'bg-normal'" ><a (click)="item = 'home'" routerLink="/home">Home</a></li>
+                <li [ngClass]="(item=='order')?'bg-white':'bg-normal'"><a (click)="item = 'order'" routerLink="/order">Order</a></li>
+                <li [ngClass]="(item=='book')?'bg-white':'bg-normal'"><a (click)="item = 'book'" routerLink="/book">Book a Table</a></li>
+                <li [ngClass]="(item=='restaurants')?'bg-white':'bg-normal'"><a (click)="item = 'restaurants'" routerLink="/restaurants">Restaurants</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+              </ul>
+            </div>
+          </nav>
+          <router-outlet></router-outlet>

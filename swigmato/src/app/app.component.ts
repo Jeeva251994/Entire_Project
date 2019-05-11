@@ -17,8 +17,9 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    this._router.navigate(['/']);
-  this.openModal.nativeElement.click();
+    // this._router.navigate(['/']);
+  // this.openModal.nativeElement.click();
+    this.loginCheck = true;
 }
 
   login() {

@@ -1,9 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingpageComponent } from './landingpage/landingpage.component'
+import { HomeComponent } from './home/home.component';
+import { OrderComponent } from './order/order.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component'
+import { BookComponent } from './book/book.component';
 
+import { from } from 'rxjs';
 const routes: Routes = [
-  { path: 'landing', component: LandingpageComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'order', component: OrderComponent },
+  { path: 'book', component: BookComponent },
+  { path: 'restaurants', component: RestaurantsComponent }
+
 ];
 
 @NgModule({
