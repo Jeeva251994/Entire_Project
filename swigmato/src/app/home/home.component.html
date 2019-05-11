@@ -53,17 +53,15 @@
         <div class="modal-dialog">
         
           <!-- Modal content-->
+          <ngx-spinner></ngx-spinner>
           <div class="modal-content">
             <div class="modal-header btn-success">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title text-center">{{modalHeader}}</h4>
             </div>
-            <div [hidden]="this.spinnerToogle" class="modal-body">
-                    <span>{{modalContent}}</span>
-            </div>
-            <div [hidden]="!this.spinnerToogle" class="modal-body">
-             <ngx-spinner></ngx-spinner>
-            </div>
+            <div class="modal-body">
+                    <h4>{{modalContent}}</h4>   
+           </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
             </div>

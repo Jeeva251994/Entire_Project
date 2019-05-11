@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
   modalHeader:string="";
   modalContent:string="";
   spinnerToogle:boolean;
+  count:number = 0;
+   initTime = new Date();
+   i = 0;
+   timeRemaining:any;
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
@@ -32,24 +36,45 @@ export class HomeComponent implements OnInit {
 }, 2000);
   }
   feedback(){
-    this.spinnerToogle=false;    
+   this.spinnerToogle=false
 this.modalHeader="FEEDBACK"
 this.modalContent="Thankyou, Your Feedback has been successfully Submitted";
   }
   luckSpinner(){
-    this.spinnerToogle=true;
+    this.spinnerToogle=true
     this.modalHeader="LUCK SPINNER"
     this.spinner.show();
     this.spinnerHide();
-    this.modalContent="";
-   
+    this.modalContent=""
   }
 
+ myTimer(){
+  
+    this.i++;
+    var newTime = new Date(this.initTime.getTime() - this.i * 1000);
+    this.timeRemaining = newTime.toLocaleTimeString();
+    this.timeRemaining=this.timeRemaining.slice(0, 8)+" hrs";
+    if(this.spinnerToogle){
+    this.modalContent="Maximum Limit reached! Try after "+this.timeRemaining;
+    }
+   
+    setTimeout(() => {
+      this.myTimer();
+  }, 1000);
+    }
+   
 spinnerHide(){
   setTimeout(() => {
-    /** spinner ends after 5 seconds */
     this.spinner.hide();
-}, 60000);}
+    if(this.count == 0){
+    this.modalContent="Congrats!! Use Code 'LUCKY' to get 20% instant cashback!"; this.count++;
+  }
+    else{
+      
+      this.myTimer();
+ 
+    }
+}, 1000);}
 
 
 }
