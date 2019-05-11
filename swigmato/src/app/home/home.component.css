@@ -1,0 +1,37 @@
+.homeBody{
+    background-color:#fff;
+    height:50%;
+}
+.nopadding{
+    padding:0px !important;
+}
+.segmentedLine{
+    background-color: #d80505;
+    height:2px;
+}
+.bgDeals{
+    background-color:rgb(250, 250, 250);
+    color:rgb(250, 0, 0);
+}
+.bglocate{
+    background-color: rgb(255, 153, 0);
+    color:#fff;
+    padding:70px;
+}
+.locateBelow{
+    padding: 50px;
+}
+.inputHeight1{
+    height:50px !important;
+    background-color: #fff;
+    color:rgb(255, 153, 0);
+    /* width:20px; */
+}
+.inputHeight2{
+    height:50px !important;
+}
+.locateme{
+    background-color:rgb(255, 153, 0);
+    color:#fff;
+    cursor:pointer;
+}

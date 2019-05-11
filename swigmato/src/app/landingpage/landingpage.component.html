@@ -1,5 +1,3 @@
-
-  
         <nav class="navbar navbar-inverse bg">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -11,6 +9,7 @@
                 <li [ngClass]="(item=='book')?'bg-white':'bg-normal'"><a (click)="item = 'book'" routerLink="/book">Book a Table</a></li>
                 <li [ngClass]="(item=='restaurants')?'bg-white':'bg-normal'"><a (click)="item = 'restaurants'" routerLink="/restaurants">Restaurants</a></li>
               </ul>
+             
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
               </ul>
