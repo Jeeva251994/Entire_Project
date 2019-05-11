@@ -6,19 +6,66 @@
                 <h4>order your delicious food in Swigmato</h4>
             </div>
             <div class="locateBelow bg-danger">
-                    <div class="input-group">
-                            
+                    <div class="input-group row">
                             <input  type="text" class="form-control inputHeight2" name="locate" placeholder="Choose your location">
                             <span class="input-group-addon locateme">Locate &nbsp;<i class="glyphicon glyphicon-screenshot"></i></span>
-                            
-                          </div>
+                          </div><br>
+                          <div class="input-group row">
+                                <span class="input-group-addon inputHeight1"><i class="glyphicon glyphicon-search"></i></span>
+                          <input  type="text" class="form-control inputHeight2" name="locate" placeholder="Search for Restaurants or Cusaines">
+                        </div><br>
+                        <div class="input-group row">
+                                <textarea class="form-control" placeholder="Write Your Feedback about Swigito" cols="80" rows="3" id="comment"></textarea>
+                                <span data-toggle="modal" data-target="#myModal" class="input-group-addon locateme extraPadding"><i class="glyphicon glyphicon-share"></i></span>
+                              </div>
+                              <!-- <span class="pd-l"><button class="btn locateme extraPadding"> Submit</button></span> -->
 
             </div>
         </div>
         <div class="col-sm-6 bgDeals">
     <h4 class="text-center text-danger nopadding bgDeals">Deals of the day</h4>
-    <div class="segmentedLine"></div>
-    <h5 class="">If New User use "FIRST" to get 50%offer</h5>
-        </div>
+    <div class="segmentedLine"></div><br>
+    <div class="alert alert-success">
+    <h4 class="text text-success">New to Swigito?</h4>
+    <span>Use "FIRST" to get 50% offer</span>
+</div>
+<div class="alert alert-danger">
+    <h4 class="text text-danger">Already used "FIRST"?</h4>
+    <span>Nothing to worry, Use "TREAT" to get 40% offer</span>
+    </div>
+    <div class="alert alert-warning">
+            <h4 class="text text-primary">Do you Refer?</h4>
+            <span>Regfer your friends and unlock promo "Refer" to get maximum of 50% cashback!</span><br>
+            <button data-toggle="modal" data-target="#myModal" class="btn btn-warning">Refer Your Friends</button>
+            </div>
+    
+    <div class="alert luckyPromo">
+            <h4>Daily Hunt</h4>
+            <h6>Unlock your lucky promo by clicking below</h6>
+            <button data-toggle="modal" data-target="#myModal" class="btn btn-success">See Your luck today</button>
     </div>
 </div>
+</div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
