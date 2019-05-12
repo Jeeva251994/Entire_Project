@@ -8,11 +8,13 @@
 }
 
 .labelColor {
-	color: #fff;
+    color: #fff;
+    font-size: medium;
 }
 
  ::ng-deep .wc-date-container {
-	height: 37px !important;
+    height: 37px !important;
+    border:none !important;
 }
 
 .calender {
@@ -31,10 +33,20 @@
 }
 
 ::ng-deep .wc-date-popover {
-	width: 240px!important
+    width: 240px!important;
+    border:none !important;
 }
 
 .confirmButton {
 	padding: 0px 220px;
 	padding-top: 300px;
+}
+.clearfix{
+	overflow: auto;
+}
+.confirmButtontext{
+	padding: 10px;
+}
+.close{
+	color:#fff;
 }

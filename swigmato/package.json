@@ -26,6 +26,7 @@
     "core-js": "^2.5.4",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
+    "ngx-carousels": "0.0.6",
     "ngx-date-picker": "0.0.24",
     "ngx-spinner": "^7.1.4",
     "rxjs": "~6.3.3",

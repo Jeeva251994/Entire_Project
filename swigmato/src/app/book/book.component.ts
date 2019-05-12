@@ -16,10 +16,11 @@ export class BookComponent implements OnInit {
   constructor(private bookServiceService: BookServiceService) {}
 
   dropdownHeaders: any[] = [];
+  name:any[]=[];
   dropdownList = [];
   selectedItems = {};
   dropdownSettings = {};
-
+  hotelCounts=[1,2,3,4,5,6]
   date: Date = new Date();
   settings = {
       bigBanner: true,
@@ -33,7 +34,7 @@ export class BookComponent implements OnInit {
 
       this.dropdownSettings = {
           singleSelection: true,
-          text: "Select Location",
+          text: "Select here",
           selectAllText: 'Select All',
           unSelectAllText: 'UnSelect All',
           enableSearchFilter: true,
@@ -76,5 +77,8 @@ export class BookComponent implements OnInit {
   }
 
 
-
+  resetAll(){
+      this.name=[];
+   
+}
 }
