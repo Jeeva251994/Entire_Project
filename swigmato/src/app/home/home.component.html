@@ -15,11 +15,9 @@
                           <input  type="text" class="form-control inputHeight2" name="locate" placeholder="Search for Restaurants or Cusaines">
                         </div><br>
                         <div class="input-group row">
-                                <textarea class="form-control" placeholder="Write Your Feedback about Swigito" cols="80" rows="3" id="comment"></textarea>
+                                <textarea [(ngModel)]="feedbackInput" class="form-control" placeholder="Write Your Feedback about Swigito" cols="80" rows="3" id="comment"></textarea>
                                 <span data-toggle="modal" data-target="#myModal" (click)="feedback()" class="input-group-addon locateme extraPadding"><i class="glyphicon glyphicon-share"></i></span>
-                              </div>
-                              <!-- <span class="pd-l"><button class="btn locateme extraPadding"> Submit</button></span> -->
-
+                            </div>
             </div>
         </div>
         <div class="col-sm-6 bgDeals">
@@ -65,16 +63,14 @@
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                       <input id="email" type="text" class="form-control" name="email" placeholder="Email">
                       <span (click)="reference=true;" class="input-group-addon locateme">Send &nbsp;<i class="glyphicon glyphicon-envelope"></i></span></div>
-                      <div *ngIf="!hideMail">
-                      <h6 *ngIf="reference" class="text text-success">Thankyou for your reference. Mail has been sent to Referred Id</h6>
+                      <div [hidden]="hideMail">
+                      <h6 [hidden]="!reference" class="text text-success">Thankyou for your reference. Mail has been sent to Referred Id</h6>
                     </div>
            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
             </div>
-            
-          </div>
-          
+          </div>          
         </div>
       </div>
 

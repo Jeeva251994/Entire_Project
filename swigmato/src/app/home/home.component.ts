@@ -15,16 +15,14 @@ export class HomeComponent implements OnInit {
   count:number = 0;
   initTime = new Date();
   timeRepeat:number = 0;
-   timeRemaining:any;
-   hideMail:boolean;
-   reference:boolean;
+  timeRemaining:any;
+  hideMail:boolean;
+  reference:boolean;
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     this.swigmatoHelper="UnExpected Guests?";
     this.swigmatoHelperCalling();  
-   
- 
   }
 
   swigmatoHelperCalling(){
@@ -53,7 +51,6 @@ this.modalContent="Thankyou, Your Feedback has been successfully Submitted";
   }
 
  myTimer(){
-  
     this.timeRepeat++;
     var newTime = new Date(this.initTime.getTime() - this.timeRepeat * 1000);
     this.timeRemaining = newTime.toLocaleTimeString();
@@ -61,7 +58,6 @@ this.modalContent="Thankyou, Your Feedback has been successfully Submitted";
     if(this.spinnerToogle){
     this.modalContent="Maximum Limit reached! Try after "+this.timeRemaining;
     }
-   
     setTimeout(() => {
       this.myTimer();
   }, 1000);
@@ -73,11 +69,7 @@ spinnerHide(){
     if(this.count == 0){
     this.modalContent="Congrats!! Use Code 'LUCKY' to get 20% instant cashback!"; this.count++;
   }
-    else{
-      
-      this.myTimer();
- 
-    }
+    else{this.myTimer();}
 }, 1000);}
 
 refer(){
