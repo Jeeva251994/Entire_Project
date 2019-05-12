@@ -12,7 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { OrderComponent } from './order/order.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { BookComponent } from './book/book.component'; 
-
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,8 @@ import { BookComponent } from './book/book.component';
     BookComponent
   ],
   imports: [
+    AngularMultiSelectModule,
+    AngularDateTimePickerModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,

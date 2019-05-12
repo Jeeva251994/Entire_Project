@@ -1,0 +1,26 @@
+.bookHeader{
+    padding: 20px 20px;
+    margin-top: 0%;
+}
+.bgColor{
+    background-color:rgb(185, 185, 253) !important;
+   }
+   .labelColor{
+    color:#fff;
+   }
+   ::ng-deep .wc-date-container{
+       height:37px !important;
+       
+   }
+   .calender{
+    background-color: #337ab7;
+    border: none;
+    color:#fff;
+   }
+   ::ng-deep .wc-date-container span
+{
+   margin-left: 2px;
+}
+.pb-40{
+padding-bottom: 40px;
+}
