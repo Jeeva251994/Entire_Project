@@ -24,3 +24,6 @@
 .pb-40{
 padding-bottom: 40px;
 }
+::ng-deep  .wc-date-popover{
+width:240px!important
+}

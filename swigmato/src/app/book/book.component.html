@@ -1,26 +1,21 @@
 <div class="container bgColor clearfix">
   <div class="row">
-  <h3 class="text text-center text-primary bg-primary bookHeader">Book Your Table for Future Parties</h3>  
-</div>
-<div class="col-md-6 pb-40">
-  <div class="col-md-6">
-      <label class="labelColor">Select Date</label>
-      <div class="input-group">
-          <angular2-date-picker [(ngModel)]="date" [settings]="settings">
-            </angular2-date-picker>
-          <span class="input-group-addon calender" (click)="defaultOpen=true;"><i class="glyphicon glyphicon-th"></i></span>
-        </div>
-    </div>   
-<div *ngFor="let item of headers;let in = index;">
-    <div class="col-md-6">
-    <label class="labelColor">Select {{item}}</label>
-    <angular2-multiselect [data]="dropdownList" [(ngModel)]="headers[in].name" 
-    [settings]="dropdownSettings" 
-    (onSelect)="onItemSelect($event)" 
-    (onDeSelect)="OnItemDeSelect($event)"
-    (onSelectAll)="onSelectAll($event)"
-    (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
-</div>
-</div>
+      <h3 class="text text-center text-primary bg-primary bookHeader">Book Your Table for Future Parties</h3>
+  </div>
+  <div class="col-md-6 pb-40">
+      <div class="col-md-6">
+          <label class="labelColor">Select Date</label>
+          <div class="input-group">
+              <angular2-date-picker [(ngModel)]="date" [settings]="settings">
+              </angular2-date-picker>
+              <span class="input-group-addon calender" (click)="defaultOpen=true;"><i class="glyphicon glyphicon-th"></i></span>
+          </div>
+      </div>
+      <div *ngFor="let item of dropdownHeaders;let in = index;">
+          <div class="col-md-6">
+              <label class="labelColor">Select {{item}}</label>
+              <angular2-multiselect [data]="dropdownList[in]" [(ngModel)]="dropdownHeaders[in].name" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+          </div>
+      </div>
 
-</div>
+  </div>
