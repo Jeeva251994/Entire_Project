@@ -13,9 +13,11 @@ export class HomeComponent implements OnInit {
   modalContent:string="";
   spinnerToogle:boolean;
   count:number = 0;
-   initTime = new Date();
-   i = 0;
+  initTime = new Date();
+  timeRepeat:number = 0;
    timeRemaining:any;
+   hideMail:boolean;
+   reference:boolean;
   constructor(private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
@@ -36,11 +38,13 @@ export class HomeComponent implements OnInit {
 }, 2000);
   }
   feedback(){
-   this.spinnerToogle=false
+    this.hideMail = true;
+this.spinnerToogle=false
 this.modalHeader="FEEDBACK"
 this.modalContent="Thankyou, Your Feedback has been successfully Submitted";
   }
   luckSpinner(){
+    this.hideMail = true;
     this.spinnerToogle=true
     this.modalHeader="LUCK SPINNER"
     this.spinner.show();
@@ -50,8 +54,8 @@ this.modalContent="Thankyou, Your Feedback has been successfully Submitted";
 
  myTimer(){
   
-    this.i++;
-    var newTime = new Date(this.initTime.getTime() - this.i * 1000);
+    this.timeRepeat++;
+    var newTime = new Date(this.initTime.getTime() - this.timeRepeat * 1000);
     this.timeRemaining = newTime.toLocaleTimeString();
     this.timeRemaining=this.timeRemaining.slice(0, 8)+" hrs";
     if(this.spinnerToogle){
@@ -75,6 +79,14 @@ spinnerHide(){
  
     }
 }, 1000);}
+
+refer(){
+  this.hideMail = false;
+  this.reference = false;
+  this.spinnerToogle=false
+  this.modalHeader="Refer"
+}
+
 
 
 }

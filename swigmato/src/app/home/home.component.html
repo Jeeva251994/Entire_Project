@@ -36,7 +36,7 @@
     <div class="alert alert-warning">
             <h4 class="text text-primary">Do you Refer?</h4>
             <span>Regfer your friends and unlock promo "Refer" to get maximum of 50% cashback!</span><br>
-            <button data-toggle="modal" data-target="#myModal" class="btn btn-warning">Refer Your Friends</button>
+            <button (click)="refer()" data-toggle="modal" data-target="#myModal" class="btn btn-warning">Refer Your Friends</button>
             </div>
     
     <div class="alert luckyPromo">
@@ -59,8 +59,15 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title text-center">{{modalHeader}}</h4>
             </div>
-            <div class="modal-body">
-                    <h4>{{modalContent}}</h4>   
+            <div class="modal-body">   
+                    <h4 *ngIf="hideMail">{{modalContent}}</h4>
+                    <div *ngIf="!hideMail" class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                      <span (click)="reference=true;" class="input-group-addon locateme">Send &nbsp;<i class="glyphicon glyphicon-envelope"></i></span></div>
+                      <div *ngIf="!hideMail">
+                      <h6 *ngIf="reference" class="text text-success">Thankyou for your reference. Mail has been sent to Referred Id</h6>
+                    </div>
            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
