@@ -1,29 +1,40 @@
-.bookHeader{
-    padding: 20px 20px;
-    margin-top: 0%;
+.bookHeader {
+	padding: 20px 20px;
+	margin-top: 0%;
 }
-.bgColor{
-    background-color:rgb(185, 185, 253) !important;
-   }
-   .labelColor{
-    color:#fff;
-   }
-   ::ng-deep .wc-date-container{
-       height:37px !important;
-       
-   }
-   .calender{
-    background-color: #337ab7;
-    border: none;
-    color:#fff;
-   }
-   ::ng-deep .wc-date-container span
-{
-   margin-left: 2px;
+
+.bgColor {
+	background-color: rgb(185, 185, 253) !important;
 }
-.pb-40{
-padding-bottom: 40px;
+
+.labelColor {
+	color: #fff;
 }
-::ng-deep  .wc-date-popover{
-width:240px!important
+
+ ::ng-deep .wc-date-container {
+	height: 37px !important;
+}
+
+.calender {
+	background-color: #337ab7;
+	border: none;
+	color: #fff;
+}
+
+ ::ng-deep .wc-date-container span {
+	margin-left: 2px;
+	color: #000;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+::ng-deep .wc-date-popover {
+	width: 240px!important
+}
+
+.confirmButton {
+	padding: 0px 220px;
+	padding-top: 300px;
 }

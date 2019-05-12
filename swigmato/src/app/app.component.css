@@ -1,18 +1,22 @@
-.login{
-    background-color: #fff;
+.login {
+	background-color: #fff;
 }
-.modal-header{
-    padding:0px;
-    width:100%;
-    height:50% !important;
+
+.modal-header {
+	padding: 0px;
+	width: 100%;
+	height: 50% !important;
 }
-.no_outline{
-    outline: none;
+
+.no_outline {
+	outline: none;
 }
-.mt-10{
-    margin-top: 10px;
+
+.mt-10 {
+	margin-top: 10px;
 }
-.welcome{
-    background-color: #ff7530;
-    color:#fff;
+
+.welcome {
+	background-color: #ff7530;
+	color: #fff;
 }
