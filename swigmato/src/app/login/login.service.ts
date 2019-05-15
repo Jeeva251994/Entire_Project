@@ -7,13 +7,13 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  
+  data:any;
   constructor(private http: HttpClient) { 
     
   }
   
-  // loginCheck(a, b): Observable<any> {
-    loginCheck (usname,pwd):any {
+  //// loginCheck(a, b): Observable<any> {
+    loginCheck (usname,pwd):Observable<any> {
     
     
         const httpOptions = {
@@ -22,17 +22,15 @@ export class LoginService {
      
     let url = "http://localhost:8080/hello/hello";
       let body = {
-        username: usname,
-        pwd: pwd
+        "username": usname,
+        "pwd": pwd
       }
       console.log(body)
       if (usname != undefined && usname !="" && pwd != undefined && pwd != "") {
-        // return this.http.post<any>(url,body, httpOptions).pipe()
-        return true;
+        let r= this.http.post(url,body, httpOptions)
+        return r;
       }
-      else { 
-        return false;
-      }
+    
   }
 
 

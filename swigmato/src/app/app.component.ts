@@ -17,17 +17,17 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    // this._router.navigate(['/']);
-  // this.openModal.nativeElement.click();
-    this.loginCheck = true;
+    this._router.navigate(['/']);
+  this.openModal.nativeElement.click();
+    // this.loginCheck = true;
 }
 
   login() {
     this.loginCheck = this.loginService.loginCheck(this.username, this.password)
-      // .subscribe(() => console.log("sd"));;
+       .subscribe((data) => console.log(data));;
     if (this.loginCheck) {
-      this.openModal.nativeElement.click();
-      this._router.navigate(['/landing']);
+      //this.openModal.nativeElement.click();
+      //this._router.navigate(['/landing']);
     }
     else {
       this.errorMsg = true;
