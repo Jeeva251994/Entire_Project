@@ -1,6 +1,6 @@
-package vo.login;
+package swigmato.vo.login;
 
-public class loginRequest {
+public class LoginRequest {
 
     private String username;
     private String pwd;
