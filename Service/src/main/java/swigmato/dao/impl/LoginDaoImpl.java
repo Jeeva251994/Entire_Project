@@ -2,7 +2,7 @@ package swigmato.dao.impl;
 
 import org.springframework.stereotype.Repository;
 import swigmato.dao.LoginDao;
-import swigmato.vo.login.LoginRequest;
+import swigmato.vo.request.login.LoginRequest;
 
 @Repository
 public class LoginDaoImpl implements LoginDao {

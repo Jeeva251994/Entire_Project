@@ -20,7 +20,7 @@ export class LoginService {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
       };
      
-    let url = "http://localhost:8080/hello/hello";
+    let url = "http://localhost:8080/login/loginCheck";
       let body = {
         "username": usname,
         "pwd": pwd

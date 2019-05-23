@@ -2,7 +2,7 @@ package swigmato.dao;
 
 
 import org.springframework.stereotype.Component;
-import swigmato.vo.login.LoginRequest;
+import swigmato.vo.request.login.LoginRequest;
 
 @Component
 public interface LoginDao {

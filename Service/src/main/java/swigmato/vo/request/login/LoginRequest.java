@@ -1,4 +1,4 @@
-package swigmato.vo.login;
+package swigmato.vo.request.login;
 
 public class LoginRequest {
 

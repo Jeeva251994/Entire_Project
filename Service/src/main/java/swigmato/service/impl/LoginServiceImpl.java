@@ -3,7 +3,7 @@ package swigmato.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import swigmato.service.LoginService;
-import swigmato.vo.login.LoginRequest;
+import swigmato.vo.request.login.LoginRequest;
 import swigmato.dao.LoginDao;
 
 @Service

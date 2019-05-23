@@ -67,7 +67,7 @@ export class BookComponent implements OnInit {
                   let dropDowndata;
                   datas = data.dropDown;
                   this.dropdownHeaders = datas['headers'];
-                  dropDowndata = datas['dpData'];
+                  dropDowndata = datas;
                   this.dropdownHeaders.map((item) =>
                       this.dropdownList.push(dropDowndata[item])
                   )

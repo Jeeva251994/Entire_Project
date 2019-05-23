@@ -3,7 +3,7 @@ import java.lang.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import swigmato.service.LoginService;
-import swigmato.vo.login.LoginRequest;
+import swigmato.vo.request.login.LoginRequest;
 
 
 @RestController

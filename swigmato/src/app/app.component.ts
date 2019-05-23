@@ -23,11 +23,12 @@ export class AppComponent implements OnInit {
 }
 
   login() {
-    this.loginCheck = this.loginService.loginCheck(this.username, this.password)
+    let loginSuccess = this.loginService.loginCheck(this.username, this.password)
        .subscribe((data) => console.log(data));;
-    if (this.loginCheck) {
-      //this.openModal.nativeElement.click();
-      //this._router.navigate(['/landing']);
+    if (loginSuccess) {
+      this.openModal.nativeElement.click();
+      this.loginCheck =true;
+      this._router.navigate(['/home']);
     }
     else {
       this.errorMsg = true;
