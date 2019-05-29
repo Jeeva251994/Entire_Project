@@ -22,5 +22,15 @@ public class ItemRequest {
 
     private Integer id;
     private String itemName;
+    private Integer selectionId;
+
+    public Integer getSelectionId() {
+        return selectionId;
+    }
+
+    public void setSelectionId(Integer selectionId) {
+        this.selectionId = selectionId;
+    }
+
 
 }

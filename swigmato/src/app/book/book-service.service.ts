@@ -18,4 +18,17 @@ export class BookServiceService {
     let body = { }
       let r= this.http.post(url,body, httpOptions)
       return r;
-}}
+}
+checkAvailability(selected):Observable<any>{
+   
+  const httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+    let url = "http://localhost:8080/book/getAvaialilityData";
+    let response= this.http.post(url,selected, httpOptions)
+    return response;
+}
+
+
+
+}

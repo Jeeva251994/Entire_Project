@@ -14,14 +14,19 @@ import {
 export class BookComponent implements OnInit {
 
   constructor(private bookServiceService: BookServiceService) {}
-
+  selectedAvail={};
   dropdownHeaders: any[] = [];
+  dropdownAvailHeaders:any[]=[];
+  dropdownAvailList:any[]=[];
   name:any[]=[];
   dropdownList = [];
   selectedItems = {};
+  selected={};
   dropdownSettings = {};
   hotelCounts=[1,2,3,4,5,6]
   date: Date = new Date();
+  checkAvailClicked:boolean = true;
+  confirmButton:boolean;
   settings = {
       bigBanner: true,
       timePicker: false,
@@ -43,22 +48,14 @@ export class BookComponent implements OnInit {
       };
   }
   onItemSelect(item: any) {
-      console.log(item);
-      console.log(this.selectedItems);
-      console.log(this.selectedItems)
+  let keys = Object.keys(this.selected)
+  if(keys.length == 3){
+    this.checkAvailClicked = false
+    this.confirmButton =false;
+    this.selectedAvail={};
   }
-  OnItemDeSelect(item: any) {
-      console.log(item);
-      console.log(this.selectedItems);
   }
-  onSelectAll(items: any) {
-      console.log(items);
-  }
-  onDeSelectAll(items: any) {
-      console.log(items);
-  }
-
-
+  
   dropDownData() {
       this.bookServiceService.getDropDownData()
           .subscribe(
@@ -74,6 +71,22 @@ export class BookComponent implements OnInit {
 
               }
           )
+  }
+
+  checkAvailability(){
+      console.log(this.selected)
+      this.checkAvailClicked = true;
+      this.confirmButton = true;
+      this.bookServiceService.checkAvailability(this.selected)
+      .subscribe((data)=>{
+        let datas;
+        let dropDowndata;
+        datas = data.dropDown;
+        this.dropdownAvailHeaders = datas['headers'];
+        dropDowndata = datas;
+        this.dropdownAvailHeaders.map((item) =>
+            this.dropdownAvailList.push(dropDowndata[item])
+      )});
   }
 
 

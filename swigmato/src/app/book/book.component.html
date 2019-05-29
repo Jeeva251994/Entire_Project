@@ -14,12 +14,23 @@
       <div *ngFor="let item of dropdownHeaders;let in = index;">
           <div class="col-md-6">
               <label class="labelColor">Select {{item}}</label>
-              <angular2-multiselect [data]="dropdownList[in]" [(ngModel)]="name[in]" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+              <angular2-multiselect [data]="dropdownList[in]" [(ngModel)]="selected[dropdownHeaders[in]]" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" ></angular2-multiselect>
           </div>
       </div>
-      <div class="row confirmButton">
-      <button (click)="resetAll()" class="btn btn-success confirmButtontext" data-toggle="modal" data-target="#myModal" ><strong>Confirm Booking</strong></button>
+      <div class="row checkAvailability">
+        <button [disabled]="checkAvailClicked" (click)="checkAvailability()" class="btn btn-success confirmButtontext" ><strong>Check Availability</strong></button>
+        </div>
+        <div *ngIf="confirmButton">
+        <div *ngFor="let item of dropdownAvailHeaders;let in = index;">
+            <div class="col-md-6">
+                <label class="labelColor">Select {{item}}</label>
+                <angular2-multiselect [data]="dropdownAvailList[in]" [(ngModel)]="selectedAvail[dropdownAvailHeaders[in]]" [settings]="dropdownSettings" ></angular2-multiselect>
+            </div>
+        </div>
+      <div class="row ">
+      <button  (click)="resetAll()" class="btn btn-success confirmButton" data-toggle="modal" data-target="#myModal" ><strong>Confirm Booking</strong></button>
       </div>
+    </div>
 
 
   </div>

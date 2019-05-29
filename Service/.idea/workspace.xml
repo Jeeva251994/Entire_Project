@@ -15,8 +15,8 @@
       <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="27" lean-forward="true" selection-start-line="26" selection-end-line="27" />
+            <state relative-caret-position="272">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,21 +24,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="checkAvailReq.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/checkAvailReq.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="e#270#278#0" expanded="true" />
+                <element signature="e#320#328#0" expanded="true" />
+                <element signature="e#380#388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BookServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="100">
+              <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#533#541#0" expanded="true" />
-                <element signature="e#594#602#0" expanded="true" />
-                <element signature="e#651#659#0" expanded="true" />
-                <element signature="e#704#712#0" expanded="true" />
-                <element signature="e#663#676#0" expanded="true" />
-                <element signature="e#778#791#0" expanded="true" />
-                <element signature="e#917#930#0" expanded="true" />
-                <element signature="e#663#676#0" expanded="true" />
+                <element signature="e#3209#3218#0" expanded="true" />
+                <element signature="e#3275#3288#0" expanded="true" />
+                <element signature="e#3345#3354#0" expanded="true" />
+                <element signature="e#3284#3297#0" expanded="true" />
+                <element signature="e#3529#3537#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,8 +67,8 @@
       <file leaf-file-name="BookService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +79,8 @@
       <file leaf-file-name="BookDropDownRes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropDownRes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#155#156#0" expanded="true" />
@@ -72,13 +92,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookDropdownReq.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropdownReq.java">
+      <file leaf-file-name="ItemRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/ItemRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="119">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,11 +151,12 @@
         <option value="$PROJECT_DIR$/src/main/java/swigmato/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/dao/impl/LoginDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/login/LoginRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/ItemRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropdownReq.java" />
-        <option value="$PROJECT_DIR$/src/main/java/swigmato/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropDownRes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/ItemRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swigmato/service/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/login/LoginRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/checkAvailReq.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/controller/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java" />
       </list>
@@ -150,7 +182,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -161,9 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +296,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,6 +313,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="swigmato.vo.request.book" />
       <recent name="swigmato.dao" />
     </key>
   </component>
@@ -382,16 +415,16 @@
       <workItem from="1557856116511" duration="5679000" />
       <workItem from="1557887280175" duration="2294000" />
       <workItem from="1558104365793" duration="6533000" />
-      <workItem from="1558579129398" duration="2641000" />
+      <workItem from="1558579129398" duration="3224000" />
+      <workItem from="1558768977245" duration="6613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31124000" />
+    <option name="totallyTimeSpent" value="38320000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -403,7 +436,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.119281046" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.50980395" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32843137" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -411,10 +444,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32843137" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29738563" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843137" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -444,28 +477,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java</url>
-          <line>36</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java</url>
-          <line>76</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -699,24 +725,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/login/LoginRequest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="181">
+          <caret line="145" column="54" lean-forward="true" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/ItemRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#114#115#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />
@@ -726,41 +745,35 @@
             <element signature="e#270#271#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
             <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="145" column="54" lean-forward="true" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/service/BookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/BookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/login/LoginRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="27" lean-forward="true" selection-start-line="26" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropdownReq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="153">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -769,8 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/BookDropDownRes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#155#156#0" expanded="true" />
@@ -781,20 +794,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/vo/request/book/checkAvailReq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#270#278#0" expanded="true" />
+            <element signature="e#320#328#0" expanded="true" />
+            <element signature="e#380#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#533#541#0" expanded="true" />
-            <element signature="e#594#602#0" expanded="true" />
-            <element signature="e#651#659#0" expanded="true" />
-            <element signature="e#704#712#0" expanded="true" />
-            <element signature="e#663#676#0" expanded="true" />
-            <element signature="e#778#791#0" expanded="true" />
-            <element signature="e#917#930#0" expanded="true" />
-            <element signature="e#663#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/swigmato/service/impl/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="100" column="23" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3209#3218#0" expanded="true" />
+            <element signature="e#3275#3288#0" expanded="true" />
+            <element signature="e#3345#3354#0" expanded="true" />
+            <element signature="e#3284#3297#0" expanded="true" />
+            <element signature="e#3529#3537#0" expanded="true" />
           </folding>
         </state>
       </provider>
