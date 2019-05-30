@@ -5,6 +5,7 @@
 
 .bgColor {
 	background-color: rgb(185, 185, 253) !important;
+	min-height: 550px;
 }
 
 .labelColor {
@@ -38,8 +39,8 @@
 }
 
 .confirmButton {
-	margin: 0px 200px;
-	margin-top: 100px;
+	margin: 0px 220px;
+	margin-top: 23px;
 	margin-bottom: 10px;
 	padding: 10px;
 }
@@ -56,4 +57,7 @@
 }
 .close{
 	color:#fff;
+}
+.mt-70{
+	margin-top: 70px;
 }
