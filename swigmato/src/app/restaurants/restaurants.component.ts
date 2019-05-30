@@ -14,7 +14,7 @@ export class RestaurantsComponent implements OnInit {
   ngOnInit() {
     this.itemImageUrl = '../assets/images/1.jpg'
     this.rstDetails=[
-{name:"Zaitoon",image:"Zaitoon", location:"velachery"},
+{name:"Annalaya",image:"Annalaya", location:"velachery"},
 {name:"Aseef",image:"Aseef", location:"Adambakkam"},
 {name:"Barbeque Nation",image:"Barbeque_Nation", location:"Adambakkam"},
 {name:"Bhuhari",image:"Bhuhari", location:"Adambakkam"},
