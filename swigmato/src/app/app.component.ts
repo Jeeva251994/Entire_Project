@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    this._router.navigate(['/']);
+    this._router.navigate(['/restaurants']);
   this.openModal.nativeElement.click();
     // this.loginCheck = true;
 }
@@ -25,7 +25,8 @@ export class AppComponent implements OnInit {
   login() {
     let loginSuccess = this.loginService.loginCheck(this.username, this.password)
        .subscribe((data) => console.log(data));;
-    if (loginSuccess) {
+    // if (loginSuccess) {
+      if (true) {
       this.openModal.nativeElement.click();
       this.loginCheck =true;
       this._router.navigate(['/home']);
