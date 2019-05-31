@@ -1,11 +1,16 @@
-<div class="initial" style="overflow: auto">
-
+<div>
+    <span class="legend">
+    Choose Your Favourire Restaurants for Delicious Food
+  </span>
+  </div>
+<div class="initial">
 <div  *ngFor="let item of rstDetails">
   <div class="mainDiv">
      <div class=" col-md-offset-1 col-md-3 flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-       <img src="../../assets/images/restaurants/{{item.image}}.jpg" alt="Avatar" style="width:300px;height:300px;"> 
+       <img src="../../assets/images/restaurants/{{item.image}}.jpg" alt="Avatar" style="width:300px;height:280px;"> 
+       <div style="background-color: black;color: #fff;font-weight: bold;font-size: 20px;">{{item.name}}</div>
     </div>
     <div class="flip-card-back">
       <h1>John Doe</h1> 

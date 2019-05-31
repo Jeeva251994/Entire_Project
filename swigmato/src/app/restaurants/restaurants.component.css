@@ -1,6 +1,7 @@
 .initial{
-height:560px;
-background-color: #fff;
+height:525px;
+background-color: rgb(78, 78, 78);
+overflow: auto;
 }
 
 .flip-card {
@@ -18,7 +19,6 @@ background-color: #fff;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -30,11 +30,14 @@ background-color: #fff;
   width: 300px;
   height: 300px;
   backface-visibility: hidden;
+
 }
 
 .flip-card-front {
   /* background-color: #bbb; */
   color: black;
+  
+  box-shadow: 0px 0px 3px 5px rgba(125,125,125);
 }
 
 .flip-card-back {
@@ -42,6 +45,9 @@ background-color: #fff;
   color: white;
   transform: rotateY(180deg);
 }
-  .mainDiv{
-      /* padding-bottom: 10px !important; */
+  .legend{
+    padding: 10px 250px;
+    background-color:rgb(53, 52, 52);
+    color:#fff;   
+    font-size: 35px;
   }
