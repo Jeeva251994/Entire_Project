@@ -61,3 +61,8 @@ overflow: auto;
 .codeColor{
   color:rgb(255, 15, 15);
 }
+.codeBg{
+  padding: 5px 10px;
+  color:#000;
+  background-color: rgb(185, 185, 185);
+}
