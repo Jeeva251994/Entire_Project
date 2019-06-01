@@ -13,9 +13,13 @@
        <div style="background-color: black;color: #fff;font-weight: bold;font-size: 20px;">{{item.name}}</div>
     </div>
     <div class="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
+      <div class="Flip-label">{{item.name}}</div>
+      <label>Location:</label>
+      <span>{{item.location}}</span><br>
+      <label>Rating:</label>
+      <rating [(ngModel)]="item.rating"
+      [readonly]="true">
+      </rating>
     </div>
   </div>
 </div>

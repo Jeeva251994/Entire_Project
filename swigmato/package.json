@@ -28,6 +28,7 @@
     "moment": "^2.24.0",
     "ngx-carousels": "0.0.6",
     "ngx-date-picker": "0.0.24",
+    "ngx-rating": "0.0.9",
     "ngx-spinner": "^7.1.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",

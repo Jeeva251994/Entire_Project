@@ -51,3 +51,10 @@ overflow: auto;
     color:#fff;   
     font-size: 35px;
   }
+
+  .Flip-label{
+    background-color: rgb(59, 55, 55);
+    color:#fff;
+    padding: 5px;
+    font-size: 20px;
+  }

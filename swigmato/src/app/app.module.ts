@@ -15,6 +15,7 @@ import { BookComponent } from './book/book.component';
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
 import { CarouselModule } from 'ngx-carousels';
+import {RatingModule} from "ngx-rating";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CarouselModule } from 'ngx-carousels';
     AngularMultiSelectModule,
     AngularDateTimePickerModule,
     CarouselModule,
+    RatingModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
