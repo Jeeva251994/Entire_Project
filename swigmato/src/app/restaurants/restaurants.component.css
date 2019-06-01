@@ -10,6 +10,7 @@ overflow: auto;
   height: 300px;
   perspective: 1000px;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
@@ -41,8 +42,7 @@ overflow: auto;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: #ffffff;
   transform: rotateY(180deg);
 }
   .legend{
