@@ -1,5 +1,5 @@
 .initial{
-height:525px;
+height:540px;
 background-color: rgb(78, 78, 78);
 overflow: auto;
 }
@@ -46,7 +46,8 @@ overflow: auto;
   transform: rotateY(180deg);
 }
   .legend{
-    padding: 10px 250px;
+    padding: 10px;
+    text-align: center;
     background-color:rgb(53, 52, 52);
     color:#fff;   
     font-size: 35px;
