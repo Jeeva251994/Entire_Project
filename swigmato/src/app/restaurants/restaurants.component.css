@@ -1,9 +1,12 @@
-.initial{
+#initial{
 height:540px;
 background-color: rgb(78, 78, 78);
-overflow: auto;
+overflow: hidden;
 }
 
+.buttona {
+  position: fixed;
+}
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -79,6 +82,48 @@ overflow: auto;
 }
 .orderBorder{
   margin-top: 120px;
-    position: absolute;
-    margin-left:230px;
+  position: absolute;
+  margin-left:230px;
+}
+.arrowup{
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor:pointer;
+}
+.arrowdown{
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor:pointer;
+}
+.arrowLabelUp{
+  font-size: 50px;
+  transform: rotate(270deg);
+  display: inline-block;
+  margin-left:12px;
+  margin-top: -10px;
+}
+.arrowLabelDown{
+  font-size: 50px;
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-left:20px;
+  margin-top: -5px;
+}
+.pageArrow{
+  position: fixed;
+  z-index: 1;
+  left: 90%;
+  top: 72%;
+}
+.pageArrow ::selection {
+  background-color: #bbb;
+  color:#000;
+}
+.common_arrow:hover{
+  background-color: #000;
+  color:#fff;
 }

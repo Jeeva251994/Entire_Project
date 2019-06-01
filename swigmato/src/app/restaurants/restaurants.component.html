@@ -1,9 +1,18 @@
+
 <div class="legend">
     <span>
     Choose Your Favourire Restaurants for Delicious Food
     </span>
   </div>
-<div class="initial">
+<div #Scroll id="initial">
+  <div class="pageArrow">
+    <div class="common_arrow arrowup" (click)="scrollWin('up')">
+      <span class="arrowLabelUp">&rsaquo;</span>
+    </div><br>
+    <div class="common_arrow arrowdown" (click)="scrollWin('down')">
+      <span class="arrowLabelDown">&rsaquo;</span>
+    </div>
+  </div>
 <div  *ngFor="let item of rstDetails">
   <div class="mainDiv">
      <div class=" col-md-offset-1 col-md-3 flip-card">

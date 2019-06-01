@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
 
 @Component({
@@ -10,7 +10,14 @@ export class RestaurantsComponent implements OnInit {
   itemImageUrl: string;
   rstDetailsRes:any[]=[];
   rstDetails:any[]=[];
+  @ViewChild('Scroll') Scrolling: ElementRef;
   constructor() { }
+
+   scrollWin(position) {
+     if(position=="down"){this.Scrolling.nativeElement.scrollTop += 300;}
+     else {this.Scrolling.nativeElement.scrollTop -= 300;}
+  }
+
 
   ngOnInit() {
     this.itemImageUrl = '../assets/images/1.jpg'
