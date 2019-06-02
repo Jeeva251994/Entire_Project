@@ -13,12 +13,14 @@ export class AppComponent implements OnInit {
   password: string;
   loginCheck: boolean;
   errorMsg: boolean;
+  signUp:boolean;
   constructor(private loginService:LoginService, private _router: Router) { }
 
 
   ngOnInit() {
-    this._router.navigate(['/restaurants']);
+  this._router.navigate(['/restaurants']);
   this.openModal.nativeElement.click();
+  this.signUp=false;
     // this.loginCheck = true;
 }
 
@@ -38,10 +40,14 @@ export class AppComponent implements OnInit {
   }
   onResetAll(mainReset?: boolean) { 
     if (mainReset) {this.errorMsg = false; }
+    else{this.signUp=true;}
     this.username = '';
     this.password = '';
   }
-  
+  onSignUp(username,pwd){
+  localStorage.setItem("sUsername",username);
+  localStorage.setItem("spassword",pwd);
+  }  
   
   
 }

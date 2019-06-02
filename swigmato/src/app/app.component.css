@@ -20,3 +20,19 @@
 	background-color: #ff7530;
 	color: #fff;
 }
+.signUp_header{
+	background-color: red;
+	color:#fff;
+}
+
+.Sinput{
+	width: 50% !important;
+}
+.screate{
+	padding-right: 185px;
+}
+.screateInput{
+	padding: 3px 80px;
+	font-size: 18px;
+	border-radius: 25px;
+}
