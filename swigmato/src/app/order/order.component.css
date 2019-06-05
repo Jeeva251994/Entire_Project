@@ -1,0 +1,11 @@
+.orderinitial{
+    min-height: 550px;
+    background-color:#fff;
+}
+.header{
+    font-size: 30px;
+    padding: 4px 372px;
+    text-align: center;
+    color: rgb(243, 159, 2);
+    background-color: #000;
+}
