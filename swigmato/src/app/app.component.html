@@ -22,11 +22,11 @@
                           <input id="password" type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
                       </div>
                   </form>
-                  <div [hidden]="!errorMsg">
-                      <span class="col-md-12 text-center alert alert-danger alert-lg">! Invalid Credentials</span>
-                  </div>
               </div>
               <div class="modal-footer">
+                    <div *ngIf="errorMsg">
+                            <span class="col-md-12 text-center alert alert-danger alert-lg">! Invalid Credentials</span>
+                        </div>
                   <button type="button" (click)="onResetAll(false)" class="btn btn-primary no_outline">SignUp</button>
                   <button type="button" (click)="onResetAll(true)" class="btn btn-warning no_outline">Reset</button>
                   <button type="button" (click)="login();" class="btn btn-success no_outline">Login</button>

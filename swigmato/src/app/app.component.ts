@@ -25,29 +25,38 @@ export class AppComponent implements OnInit {
 }
 
   login() {
-    let loginSuccess = this.loginService.loginCheck(this.username, this.password)
-       .subscribe((data) => console.log(data));;
-    // if (loginSuccess) {
-      if (true) {
-      this.openModal.nativeElement.click();
-      this.loginCheck =true;
-      this._router.navigate(['/home']);
-    }
-    else {
-      this.errorMsg = true;
-      this.onResetAll();
-    }
-  }
-  onResetAll(mainReset?: boolean) { 
+    let loginSuccess;
+     if(this.username == localStorage.getItem("sUsername") && this.password ==  localStorage.getItem("spassword"))
+         {loginSuccess =true;}
+           else{ loginSuccess = this.loginService.loginCheck(this.username, this.password);}
+       this.loginSucc(loginSuccess);
+     }
+
+  onResetAll(mainReset) { 
     if (mainReset) {this.errorMsg = false; }
-    else{this.signUp=true;}
+    else{
+      this.signUp=true;
+    }
     this.username = '';
     this.password = '';
   }
   onSignUp(username,pwd){
   localStorage.setItem("sUsername",username);
   localStorage.setItem("spassword",pwd);
+  this.signUp=false;
+  this.errorMsg = false;
   }  
+  loginSucc(loginSuccess){
+    if (loginSuccess) {
+      this.openModal.nativeElement.click();
+      this.loginCheck =true;
+      this._router.navigate(['/home']);
+    }
+    else {
+      this.errorMsg = true;
+      // this.onResetAll(true);
+    }
+  }
   
   
 }
