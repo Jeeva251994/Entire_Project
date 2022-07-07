@@ -25,7 +25,7 @@
     "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
     "jquery": "^3.4.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ngx-carousels": "0.0.6",
     "ngx-date-picker": "0.0.24",
     "ngx-rating": "0.0.9",
